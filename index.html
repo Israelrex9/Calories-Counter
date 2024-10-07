@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <title>Calorie Counter App</title>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="top-container">
+            <h3>Calories Counter</h3>
+            <div class="result-view" id="result-view">
+                <h1 id="result">250</h1>
+                <p>Calories</p>
+            </div>
+        </div>
+
+        <form id="form">
+            <div class="input">
+                <label for="walking">Walking time</label>
+                <input type="number" name="walking" id="walkingTime" placeholder="Minutes spent walking">
+            </div>
+
+            <div class="input">
+                <label for="running">Running time</label>
+                <input type="number" name="running" id="runningTime" placeholder="Minutes spent running">
+            </div>
+
+            <div class="input">
+                <label for="cycling">Cycling time</label>
+                <input type="number" name="cycling" id="cyclingTime" placeholder="Minutes spent cycling">
+            </div>
+            
+            <button class="btn" id="btn">Calculate my calories</button>
+
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

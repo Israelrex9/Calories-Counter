@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Syne", sans-serif;
+}
+
+:root{
+    /* Color Variables */
+    --backgroundColor : #081118;;
+    --formBackground: #132534;
+    --inputBG: #213340;
+    --label: #D7E3ED;
+    --pText: #A7BCCD;
+    --h1Text: #FFF;
+    --headingText: #068EFF;
+    --placeholderText: #3D576A;
+    --btn: #204A6E;
+    --btnText: #C8C8C8;
+    --btnTextActive: #ffff;
+    --btnActive: #068EFF;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--backgroundColor);
+}
+
+.main-container {
+    display: flex;
+    width: 32.9375rem;
+    padding: 1.5rem 1.5625rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: var(--formBackground);
+}
+
+.top-container {
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.top-container h3{
+    color: var(--headingText);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.result-view {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+h1{
+    color: var(--h1Text);
+    font-family: Syne;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.5rem;
+}
+
+.result-view p{
+    color: var(--pText);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+}
+
+label{
+    color: var(--label);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input{
+    display: flex;
+    padding: 1.2rem;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    border: none;
+    border-radius: 0.75rem;
+    background: var(--inputBG);
+    color: var(--h1Text);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+input::placeholder{
+    color: var(--placeholderText);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; /* 125% */
+}
+
+button{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    border: none;
+    border-radius: 0.75rem;
+    background: var(--btn);
+    color: var(--btnText);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
